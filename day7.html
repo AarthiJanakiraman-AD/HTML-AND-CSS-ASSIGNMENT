@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>day7</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        height: 2000px; 
+        margin: 0;
+        padding: 20px;
+    }
+
+    .box {
+        width: 200px;
+        height: 80px;
+        padding: 10px;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .static {
+        position: static;
+        background-color: #607d8b;
+    }
+
+    
+    .relative {
+        position: relative;
+        top: 20px;
+        left: 30px;
+        background-color: #4caf50;
+    }
+
+    
+    .container {
+        position: relative;
+        height: 200px;
+        border: 2px dashed #000;
+        margin-bottom: 40px;
+    }
+
+    .absolute {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: #f44336;
+    }
+
+    
+    .fixed {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #9c27b0;
+    }
+
+    
+    .sticky {
+        position: sticky;
+        top: 0;
+        background-color: #ff9800;
+    }
+</style>
+</head>
+
+<body>
+
+<h2>CSS Position Properties</h2>
+
+<div class="box static">
+    Static (default position)
+</div>
+
+<div class="box relative">
+    Relative (moved from original place)
+</div>
+
+<div class="container">
+    <p>Relative Container</p>
+    <div class="box absolute">
+        Absolute (inside container)
+    </div>
+</div>
+
+<div class="box sticky">
+    Sticky (sticks when scrolling)
+</div>
+
+<div class="box fixed">
+    Fixed (always visible)
+</div>
+
+<p>Scroll down to see Sticky and Fixed behavior.</p>
+
+</body>
+</html>

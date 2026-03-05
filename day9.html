@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day9</title>
+
+    <style>
+        .hole {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .first {
+            width: 21%;
+            padding: 2%;
+        }
+        
+        .first img {
+            width: 100%;
+        }
+        
+        @media screen and (min-width:800px) and (max-width:1200px) {
+            .first {
+                width: 21%;
+                box-shadow: 1px 2px 2px red;
+            }
+            h2 {
+                color: blue;
+            }
+            .first img {
+                filter: invert();
+            }
+        }
+        
+        @media screen and (min-width:700px) and (max-width:800px) {
+            .first {
+                clip-path: circle();
+                width: 50%;
+            }
+        }
+        
+        @media screen and (min-width:600px) and (max-width:700px) {
+            .first {
+                width: 90%;
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <section class="hole">
+        <div class="first">
+            <img src="camp.jpeg" alt="">
+            <h2>column1</h2>
+
+        </div>
+        <div class="first">
+            <img src="camp.jpeg" alt="">
+            <h2>column2</h2>
+
+        </div>
+        <div class="first">
+            <img src="camp.jpeg" alt="">
+            <h2>column3</h2>
+
+        </div>
+        <div class="first">
+            <img src="camp.jpeg" alt="">
+            <h2>column4</h2>
+
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
